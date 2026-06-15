@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.nav-container {
+    display: flex;
+    background-color: #031633;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.signup {
+    width: 100%;
+    max-width: 125px;
+    padding: 10px;
+    border: #09BCB0 2px solid;
+    background-color: #031633;
+    border-radius: 5px;
+    color: white;
+}
+
+/* ================= HERO IMAGE ================= */
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.first-text {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    font-size: 40px;
+    color: white;
+}
+
+.second-text {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    font-size: 21px;
+    color: white;
+}
+
+.get-started {
+    position: absolute;
+    top: 320px;
+    left: 50px;
+    padding: 10px;
+    background-color: #09BCB0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.explore-more {
+    position: absolute;
+    top: 320px;
+    left: 200px;
+    padding: 10px;
+    border: 2px solid #09BCB0;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+}
+
+/* ================= CARDS ================= */
+.cards h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid rgb(149, 177, 187);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 15px #706f6f;
+    padding: 10px;
+}
+
+.card img {
+    display: block;
+    margin: 20px auto;
+}
+
+.card h2,
+.card p {
+    text-align: center;
+}
+
+/* ================= INFO SECTION ================= */
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px;
+    margin: 50px 0;
+    background: linear-gradient(to right, #065A82, #1B36A4, #3E27B3, #5E1EC2);
+}
+
+.portion {
+    text-align: center;
+    font-size: 22px;
+    color: wheat;
+}
+
+.divider {
+    height: 100px;
+    width: 2px;
+    background: gray;
+}
+
+/* ================= ABOUT ================= */
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.about .image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.about-text1 {
+    color: #09BCB0;
+    font-weight: bold;
+}
+
+.about-text2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-text3 {
+    font-size: 18px;
+}
+
+/* ================= TESTIMONIALS ================= */
+.says-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.say {
+    width: 300px;
+    height: 290px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #706f6f;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ================= FOOTER ================= */
+.foot-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #031633;
+    color: white;
+    padding: 30px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.quicklink li {
+    list-style: none;
+}
+
+.quicklink a {
+    color: white;
+    text-decoration: none;
+}
+
+.quicklink a:hover {
+    color: gray;
+}
+
+.newsletter input {
+    background-color: #031633;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+}
+
+.newsletter .subscribe {
+    background-color: #09BCB0;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #031633;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .first-text {
+        font-size: 24px;
+        left: 20px;
+        top: 80px;
+    }
+
+    .second-text {
+        font-size: 16px;
+        left: 20px;
+        top: 160px;
+    }
+
+    .get-started {
+        left: 20px;
+        top: 230px;
+    }
+
+    .explore-more {
+        left: 150px;
+        top: 230px;
+    }
+
+    .divider {
+        display: none;
+    }
+}
